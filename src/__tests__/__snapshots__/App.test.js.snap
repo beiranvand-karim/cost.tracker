@@ -1,0 +1,124 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should matches the snapshot 1`] = `
+<div
+  className="my-container"
+>
+  <button
+    aria-label={null}
+    className="some-item btn btn-primary"
+    onClick={[Function]}
+    type="button"
+  >
+    add a cost
+  </button>
+  <div>
+    <select
+      onChange={[Function]}
+    >
+      <option
+        value="NO_FILTER"
+      >
+        NO_FILTER
+      </option>
+      <option
+        value="FOOD"
+      >
+        FOOD
+      </option>
+      <option
+        value="CLOTHING"
+      >
+        CLOTHING
+      </option>
+      <option
+        value="RENT"
+      >
+        RENT
+      </option>
+      <option
+        value="BILLS"
+      >
+        BILLS
+      </option>
+    </select>
+  </div>
+  <div>
+    4500
+  </div>
+  <div
+    className="table-responsive"
+  >
+    <table
+      className="table"
+    >
+      <thead>
+        <tr>
+          <th>
+            #
+          </th>
+          <th>
+            Cost
+          </th>
+          <th>
+            Category
+          </th>
+          <th>
+            Comment
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th
+            scope="row"
+          >
+            0
+          </th>
+          <td>
+            1000
+          </td>
+          <td>
+            CLOTHING
+          </td>
+          <td>
+            this is a comment
+          </td>
+        </tr>
+        <tr>
+          <th
+            scope="row"
+          >
+            1
+          </th>
+          <td>
+            1500
+          </td>
+          <td>
+            RENT
+          </td>
+          <td>
+            this is a comment
+          </td>
+        </tr>
+        <tr>
+          <th
+            scope="row"
+          >
+            2
+          </th>
+          <td>
+            2000
+          </td>
+          <td>
+            FOOD
+          </td>
+          <td>
+            this is a comment
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
