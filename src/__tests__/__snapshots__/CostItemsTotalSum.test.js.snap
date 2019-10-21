@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CostItemsTotalSum/> should matches the snapshot 1`] = `
+<div>
+  total sum of transactions: 
+  4500
+</div>
+`;

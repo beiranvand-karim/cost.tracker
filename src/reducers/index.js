@@ -1,10 +1,10 @@
-import {combineReducers} from 'redux';
-import filteredCostReducer from './filteredCostReducer';
-import originalCostReducer from './originalCostReducer';
+import costItemsReducer from "./costItemsReducer";
+import sourceCostItemsReducer from "./sourceCostItemsReducer";
+import { combineReducers } from "redux";
 
 const reducer = combineReducers({
-   costs: filteredCostReducer,
-   originalCosts: originalCostReducer
+  costItems: costItemsReducer,
+  sourceCostItems: sourceCostItemsReducer
 });
 
 export default reducer;

@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CostItemCategoriesDropdown/> should matches the snapshot 1`] = `
+<div>
+  <select
+    onChange={[Function]}
+  >
+    <option
+      value="NO_FILTER"
+    >
+      NO_FILTER
+    </option>
+    <option
+      value="NO_FILTER"
+    >
+      NO_FILTER
+    </option>
+    <option
+      value="NO_FILTER"
+    >
+      NO_FILTER
+    </option>
+    <option
+      value="FOOD"
+    >
+      FOOD
+    </option>
+    <option
+      value="CLOTHING"
+    >
+      CLOTHING
+    </option>
+    <option
+      value="RENT"
+    >
+      RENT
+    </option>
+    <option
+      value="BILLS"
+    >
+      BILLS
+    </option>
+  </select>
+</div>
+`;

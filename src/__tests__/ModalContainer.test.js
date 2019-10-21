@@ -1,28 +1,28 @@
 /* global expect, describe, it, beforeEach */
+import ModalContainer from "../components/ModalContainer";
 import mockStore from "../__helpers__/mockStore";
-import costItems from "../__helpers__/costItems";
 import renderer from "react-test-renderer";
-import { App } from "../components/App";
 import { Provider } from "react-redux";
 import { shallow } from "enzyme";
 import React from "react";
 
-describe("<App />", () => {
+describe("<ModalContainer/>", () => {
   let store;
+  const toggleMock = jest.fn();
 
   beforeEach(() => {
     store = mockStore;
   });
 
   it("should render without crashing", () => {
-    shallow(<App />);
+    shallow(<ModalContainer />);
   });
 
   it("should matches the snapshot", () => {
     const tree = renderer
       .create(
         <Provider store={store}>
-          <App costItems={costItems} />
+          <ModalContainer toggle={toggleMock} />
         </Provider>
       )
       .toJSON();

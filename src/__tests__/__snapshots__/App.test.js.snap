@@ -1,124 +1,144 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`App should matches the snapshot 1`] = `
+exports[`<App /> should matches the snapshot 1`] = `
 <div
-  className="my-container"
+  className="sc-bdVaJa mJeos"
 >
-  <button
-    aria-label={null}
-    className="some-item btn btn-primary"
-    onClick={[Function]}
-    type="button"
+  <div
+    className="sc-bwzfXH cMOpaD"
+  />
+  <div
+    className="sc-bwzfXH cMOpaD"
   >
-    add a cost
-  </button>
-  <div>
-    <select
-      onChange={[Function]}
+    <button
+      aria-label={null}
+      className="btn btn-primary"
+      onClick={[Function]}
+      type="button"
     >
-      <option
-        value="NO_FILTER"
-      >
-        NO_FILTER
-      </option>
-      <option
-        value="FOOD"
-      >
-        FOOD
-      </option>
-      <option
-        value="CLOTHING"
-      >
-        CLOTHING
-      </option>
-      <option
-        value="RENT"
-      >
-        RENT
-      </option>
-      <option
-        value="BILLS"
-      >
-        BILLS
-      </option>
-    </select>
-  </div>
-  <div>
-    4500
+      add a cost
+    </button>
   </div>
   <div
-    className="table-responsive"
+    className="sc-bwzfXH cMOpaD"
   >
-    <table
-      className="table"
+    <div>
+      total sum of transactions: 
+      4500
+    </div>
+  </div>
+  <div
+    className="sc-bwzfXH cMOpaD"
+  >
+    <div>
+      <select
+        onChange={[Function]}
+      >
+        <option
+          value="NO_FILTER"
+        >
+          NO_FILTER
+        </option>
+        <option
+          value="FOOD"
+        >
+          FOOD
+        </option>
+        <option
+          value="CLOTHING"
+        >
+          CLOTHING
+        </option>
+        <option
+          value="RENT"
+        >
+          RENT
+        </option>
+        <option
+          value="BILLS"
+        >
+          BILLS
+        </option>
+      </select>
+    </div>
+  </div>
+  <div
+    className="sc-bwzfXH cMOpaD"
+  >
+    <div
+      className="table-responsive"
     >
-      <thead>
-        <tr>
-          <th>
-            #
-          </th>
-          <th>
-            Cost
-          </th>
-          <th>
-            Category
-          </th>
-          <th>
-            Comment
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th
-            scope="row"
-          >
-            0
-          </th>
-          <td>
-            1000
-          </td>
-          <td>
-            CLOTHING
-          </td>
-          <td>
-            this is a comment
-          </td>
-        </tr>
-        <tr>
-          <th
-            scope="row"
-          >
-            1
-          </th>
-          <td>
-            1500
-          </td>
-          <td>
-            RENT
-          </td>
-          <td>
-            this is a comment
-          </td>
-        </tr>
-        <tr>
-          <th
-            scope="row"
-          >
-            2
-          </th>
-          <td>
-            2000
-          </td>
-          <td>
-            FOOD
-          </td>
-          <td>
-            this is a comment
-          </td>
-        </tr>
-      </tbody>
-    </table>
+      <table
+        className="table"
+      >
+        <thead>
+          <tr>
+            <th>
+              #
+            </th>
+            <th>
+              Cost
+            </th>
+            <th>
+              Category
+            </th>
+            <th>
+              Comment
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th
+              scope="row"
+            >
+              0
+            </th>
+            <td>
+              1000
+            </td>
+            <td>
+              CLOTHING
+            </td>
+            <td>
+              this is a comment
+            </td>
+          </tr>
+          <tr>
+            <th
+              scope="row"
+            >
+              1
+            </th>
+            <td>
+              1500
+            </td>
+            <td>
+              RENT
+            </td>
+            <td>
+              this is a comment
+            </td>
+          </tr>
+          <tr>
+            <th
+              scope="row"
+            >
+              2
+            </th>
+            <td>
+              2000
+            </td>
+            <td>
+              FOOD
+            </td>
+            <td>
+              this is a comment
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </div>
 `;

@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CostItemForm/> should matches the snapshot 1`] = `
+<form
+  className=""
+  onSubmit={[Function]}
+>
+  <div
+    className="form-group"
+  >
+    <label
+      className=""
+      htmlFor="cost"
+    >
+      Cost
+    </label>
+    <input
+      className="form-control"
+      id="cost"
+      name="cost"
+      onChange={[Function]}
+      placeholder="cost here..."
+      type="input"
+      value=""
+    />
+  </div>
+  <div
+    className="form-group"
+  >
+    <label
+      className=""
+      htmlFor="category"
+    >
+      Category
+    </label>
+    <select
+      className="form-control"
+      id="category"
+      name="category"
+      onChange={[Function]}
+      value="FOOD"
+    >
+      <option>
+        FOOD
+      </option>
+      <option>
+        CLOTHING
+      </option>
+      <option>
+        RENT
+      </option>
+      <option>
+        BILLS
+      </option>
+    </select>
+  </div>
+  <div
+    className="form-group"
+  >
+    <label
+      className=""
+      htmlFor="comment"
+    >
+      Comment
+    </label>
+    <input
+      className="form-control"
+      id="comment"
+      name="comment"
+      onChange={[Function]}
+      placeholder="comment here..."
+      type="input"
+      value=""
+    />
+  </div>
+  <button
+    aria-label={null}
+    className="btn btn-primary"
+    onClick={[Function]}
+    type="submit"
+  >
+    add cost
+  </button>
+   
+  <button
+    aria-label={null}
+    className="btn btn-secondary"
+    onClick={[Function]}
+  >
+    Cancel
+  </button>
+</form>
+`;

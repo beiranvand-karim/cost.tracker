@@ -1,3 +1,22 @@
+# Description
+
+## Cost Tracker
+
+the purpose of this small project is to create a small but steal realistic project
+
+## Scenario
+
+Anna wants to keep track of her money. To help Anna do this, build a web app that allows her to enter the costs as she makes them,
+and show how much it adds up to.
+
+## Requirements
+the application should:
+
+- allow the user to add cost items with a category and a comment for what it was
+- show all cost items in a list
+- show the total sum of transactions
+- allow the user to filter transactions by category
+
 ## Available Scripts
 
 In the project directory, you can run:
