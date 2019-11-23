@@ -1,50 +1,41 @@
-import { addFilteredCostItemsAction } from "../actions/costItemsActions";
-import { costCategories } from "../config/costCategories";
+import { useDispatch, useSelector } from "react-redux";
+import React from "react";
 import { NO_FILTER } from "../constants/constants";
-import React, { Component } from "react";
-import { connect } from "react-redux";
+import { addFilteredCostItemsAction } from "../actions";
+import { costCategories } from "../config";
 
-const costCategoriesKeys = Object.keys(costCategories);
+const costCategoriesKeys = () => {
+  const temp = Object.keys(costCategories);
+  temp.unshift(NO_FILTER);
+  return temp;
+};
 
-export class CostItemCategoriesDropdown extends Component {
-  handleChange = event => {
+export function CostItemCategoriesDropdown() {
+  const dispatch = useDispatch();
+  const sourceCostItems = useSelector(state => state.sourceCostItems.costItems);
+  const handleChange = event => {
     const { value } = event.target;
     if (NO_FILTER === value) {
-      this.props.addFilteredCostItemsAction(this.props.sourceCostItems);
+      dispatch(addFilteredCostItemsAction(sourceCostItems));
       return;
     }
-    const CostItems = this.props.sourceCostItems.filter(
+    const CostItems = sourceCostItems.filter(
       costItem => costItem.category === value
     );
-    this.props.addFilteredCostItemsAction(CostItems);
+    dispatch(addFilteredCostItemsAction(CostItems));
   };
 
-  render() {
-    costCategoriesKeys.unshift(NO_FILTER);
-    return (
-      <div>
-        <select onChange={this.handleChange}>
-          {costCategoriesKeys.map((costCategory, index) => {
-            return (
-              <option key={index} value={costCategory}>
-                {costCategory}
-              </option>
-            );
-          })}
-        </select>
-      </div>
-    );
-  }
+  return (
+    <div>
+      <select onChange={handleChange}>
+        {costCategoriesKeys().map((costCategory, index) => {
+          return (
+            <option key={index} value={costCategory}>
+              {costCategory}
+            </option>
+          );
+        })}
+      </select>
+    </div>
+  );
 }
-
-const mapDispatchToProps = dispatch => ({
-  addFilteredCostItemsAction: costItems =>
-    dispatch(addFilteredCostItemsAction(costItems))
-});
-const mapStateToProps = state => ({
-  sourceCostItems: state.sourceCostItems.costItems
-});
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(CostItemCategoriesDropdown);

@@ -24,3 +24,8 @@ yarn-error.log*
 
 # IDE files
 .idea
+
+# Cypress files
+cypress/fixtures
+cypress/integration/examples
+cypress/screenshots/All Specs/my-image.png

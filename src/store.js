@@ -1,6 +1,9 @@
-import { applyMiddleware, createStore } from "redux";
-import thunk from "redux-thunk";
-import reducer from "./reducers";
+import { combineReducers } from "redux";
+import { createStore } from "redux";
+import { costItemsReducer, sourceCostItemsReducer } from "./reducers";
 
-const middleware = applyMiddleware(thunk);
-export const store = createStore(reducer, middleware);
+const reducer = combineReducers({
+  costItems: costItemsReducer,
+  sourceCostItems: sourceCostItemsReducer
+});
+export const store = createStore(reducer);

@@ -10,6 +10,7 @@ Anna wants to keep track of her money. To help Anna do this, build a web app tha
 and show how much it adds up to.
 
 ## Requirements
+
 the application should:
 
 - allow the user to add cost items with a category and a comment for what it was

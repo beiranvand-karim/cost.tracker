@@ -11,16 +11,6 @@ exports[`<CostItemCategoriesDropdown/> should matches the snapshot 1`] = `
       NO_FILTER
     </option>
     <option
-      value="NO_FILTER"
-    >
-      NO_FILTER
-    </option>
-    <option
-      value="NO_FILTER"
-    >
-      NO_FILTER
-    </option>
-    <option
       value="FOOD"
     >
       FOOD
@@ -42,4 +32,19 @@ exports[`<CostItemCategoriesDropdown/> should matches the snapshot 1`] = `
     </option>
   </select>
 </div>
+`;
+
+exports[`<CostItemCategoriesDropdown/> should push filtered cost items 1`] = `
+Array [
+  Object {
+    "payload": Array [
+      Object {
+        "category": "FOOD",
+        "comment": "this is a comment",
+        "cost": 2000,
+      },
+    ],
+    "type": "ADD_FILTERED_COST_ITEMS",
+  },
+]
 `;

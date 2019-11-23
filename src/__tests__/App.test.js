@@ -4,7 +4,7 @@ import costItems from "../__helpers__/costItems";
 import renderer from "react-test-renderer";
 import { App } from "../components/App";
 import { Provider } from "react-redux";
-import { shallow } from "enzyme";
+import { mount } from "enzyme";
 import React from "react";
 
 describe("<App />", () => {
@@ -15,7 +15,11 @@ describe("<App />", () => {
   });
 
   it("should render without crashing", () => {
-    shallow(<App />);
+    mount(
+      <Provider store={store}>
+        <App />
+      </Provider>
+    );
   });
 
   it("should matches the snapshot", () => {

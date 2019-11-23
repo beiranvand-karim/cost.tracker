@@ -7,7 +7,7 @@ const defaultState = {
   costItems: []
 };
 
-export default function costItemsReducer(state = defaultState, action) {
+export function costItemsReducer(state = defaultState, action) {
   switch (action.type) {
     case ADD_COST_ITEM:
       const { costItems } = state;

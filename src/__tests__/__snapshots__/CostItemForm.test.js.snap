@@ -1,5 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<CostItemForm/> should add a cost item 1`] = `
+Array [
+  Object {
+    "payload": Object {
+      "category": "CLOTHING",
+      "comment": "this is a comment",
+      "cost": 1000,
+    },
+    "type": "ADD_SOURCE_COST_ITEM",
+  },
+  Object {
+    "payload": Object {
+      "category": "CLOTHING",
+      "comment": "this is a comment",
+      "cost": 1000,
+    },
+    "type": "ADD_COST_ITEM",
+  },
+]
+`;
+
 exports[`<CostItemForm/> should matches the snapshot 1`] = `
 <form
   className=""

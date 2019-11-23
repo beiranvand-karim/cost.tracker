@@ -1,6 +1,6 @@
 import { Modal, ModalBody, ModalHeader } from "reactstrap";
-import CostItemForm from "./CostItemForm";
 import React from "react";
+import { CostItemForm } from ".";
 
 export function ModalContainer({ modal, toggle }) {
   return (
@@ -12,4 +12,3 @@ export function ModalContainer({ modal, toggle }) {
     </Modal>
   );
 }
-export default ModalContainer;

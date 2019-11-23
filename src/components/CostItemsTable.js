@@ -1,7 +1,7 @@
 import { Table } from "reactstrap";
 import React from "react";
 
-export default function CostItemsTable({ costItems }) {
+export function CostItemsTable({ costItems }) {
   return (
     <Table responsive>
       <thead>
